@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .box{
+            height: 500px;
+            width: 100%;
+            background-color: bisque;
+            max-width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: last baseline;
+            background-image: url(nepal.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+            
+
+        }
+        .toy{
+            height: 250px;
+            width: 700px;
+            background-color:white ;
+            font-size: 20px;
+        }
+        .rat{
+            height: auto;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .hut{
+            height: auto;
+            width: 350px;
+            font-size: 18px;
+            justify-content: center;
+            text-align: center;
+        }
+        .fly{
+            width: 150px;
+            border: 0;
+            font-size: 20px;
+            transition-duration: 1s;
+            background-color: white;
+            
+        }
+        button:hover{
+            background-color: white;
+            color: darkslategray;
+            border: 1px solid darkslategray;
+        }
+        .flat{
+            width:250px;
+            border: 1px solid darkslategray;
+            font-size: 20px;
+            transition-duration: 1s;
+            background-color: darkslategray;
+            padding: 20px;
+            color: white;
+        
+
+        }
+        .jack{
+            height: auto;
+            max-width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+            background-image: url(grass.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+
+
+        }
+        .cat{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: auto;
+            width: 100%;
+            background-color:rgba(255,255,255 , 0.4);
+            font-size: 20px;
+            color: black;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            
+            }
+            
+            .note{
+                width: 250px;
+                border: 0;
+                font-size: 20px;
+                transition-duration: 1s;
+                
+
+            }
+            .book{
+                height: auto;
+                width: 50%;
+
+            }
+            .btn{
+                padding: 10px;
+                width: 150px;
+            }
+            .mute{
+                margin-top: 30px;
+            }
+            .space{
+                height: auto;
+                width: 100%; 
+                padding-top: 50px;
+                padding-bottom: 50px;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                font-size: 20px;
+            }
+            .pat{
+                height: auto;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+            }
+            .lats{
+                margin:80px;
+                object-fit: contain;
+                transition-duration: 1s;
+                opacity: 0.9;
+            }
+            .lats:hover{
+                transform: scale(1.1);
+            }
+            .mate{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                background-color: #0c3c60;
+                display: flex;
+                position: fixed;
+                top: 0;
+                z-index: 10000000000000000;
+               
+
+
+            }
+            .class{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+             }
+            .content{
+                width: 70%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                margin: 0;
+                padding: 0;
+            }
+            ul,li{
+                display: flex;
+                padding: 0px 20px 0px 20px;
+            }
+            @media(max-width:1110px){
+            ul,li{
+                display: none;
+            }
+        }
+            a{
+              color: white;
+              text-decoration: none;
+
+            }
+            h1{
+                font-weight: 100;
+            }
+         .fa-user{
+                margin-right: 10px;
+                font-size: 15px;
+            }
+
+            
+            .scout{
+                height: auto;
+                width: 100%;
+                padding-top: 150px;
+                background-color:whitesmoke;
+                color: black;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+             }
+             .bike{
+                height: auto;
+                width:500px ;
+                padding-bottom: 50px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+             }
+             .sum{
+                padding-top: 25px;
+             }
+             .min{
+                padding-bottom: 70px;
+             }
+             h2{
+                font-weight: 200;
+             }
+             h3{
+                font-weight: 200;
+             }
+             
+             .section{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color: #0c3c60;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact{
+            text-align: center;
+            color: white;
+        }
+        .form{
+            width: 50%;
+            height: auto;
+            
+        }
+        .name{
+            display: flex;
+            justify-content: space-around;
+        }
+        .left{
+            color: white;
+          width: 45%;
+          height: 100px;
+          padding: 10px;
+        }
+        .right{
+            color: white;
+          width: 45%;
+          height: 100px;
+          padding: 10px;
+        }
+        .inputs{
+            width: 100%;
+            outline: none;
+            border:none;
+            border-bottom: 1px solid white;
+            background-color: #0c3c60;
+        }
+        .mat{
+            height: 250px;
+            width: 100%;
+            background-color: #072136;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+
+        }
+        .output{
+            height: 100%;
+            width: 40%;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-left: 30px;
+               
+        }
+        .menu{
+            height: 100%;
+            width: auto;
+            color: white;
+            display: flex;
+            justify-content: start  ;
+            align-items: start;
+            
+
+            
+
+
+        }
+        .icons{
+              height: 100%;
+              width: 30%;
+              color: white;
+        }
+        .block{
+            display: block;
+            margin-right: 50px;
+            
+        }
+        .list{
+            margin-bottom: 15px;
+            
+        }
+        .men{
+            margin-bottom: 8px;
+
+        }
+        .para{
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+        .break{
+            margin-left: 50px;
+        }
+
+            
+
+    </style>
+</head>
+<body>
+    <div class="mate">
+        <div class="class">
+            <h1>JAMES CONSULTING</h1>
+        </div>
+        <div class="content">
+            <ul>
+               <a href="#"><li>ABOUT</li></a>
+                <a href="#"><li>PROJECT</li></a>
+                <a href="#"><li>SERVICES</li></a>
+               <a href="#"><li>PLANS & PRICING</li></a>
+                <a href="#"><li>CONTACT</li></a>
+                <a href="#"><li><i class="fa-solid fa-user"></i>LOG IN</li></a>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="box">
+        <div class="toy"> 
+            <h1>Vishal jamwal</h1>
+            <p>Hi im Vishal jamwal from pathankot And im m Learning Web Development</p>
+        <button class="flat"> Book a consultation</button>
+       </div>
+        
+    </div>
+    <div class="rat">
+        <div class="hut buy"><h1>SERVICES</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nihil qui perferendis nisi illo consectetur, neque laborum? Cupiditate obcaecati dignissimos aliquam debitis ullam facere totam blanditiis inventore voluptas. Aspernatur, laborum.</p>
+            <button class="flat btn">More info</button>
+        
+        </div>
+        <div class="hut bat"><h1>PROJECTS</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nihil qui perferendis nisi illo consectetur, neque laborum? Cupiditate obcaecati dignissimos aliquam debitis ullam facere totam blanditiis inventore voluptas. Aspernatur, laborum.</p>        
+            <button class="flat btn">more info</button>
+        </div>
+        <div class="hut boz"><h1>CLIENTS</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero nihil qui perferendis nisi illo consectetur, neque laborum? Cupiditate obcaecati dignissimos aliquam debitis ullam facere totam blanditiis inventore voluptas. Aspernatur, laborum.</p>            
+            <button class="flat btn">more info</button>
+        </div>
+    </div>
+    <div class="hat">
+        <div class="car"></div>
+    </div>
+    <div class="jack">
+        <div class="cat ">
+            <div class="book">
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, dolorum. Molestiae earum neque obcaecati labore exercitationem inventore itaque aut delectus assumenda Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit voluptatum odio quos facere atque labore dolores consequatur. Error excepturi reprehenderit in provident laboriosam. Minus nostrum voluptates quisquam sed quia dolorum! </p>
+            <p>easy ways to get the most out of your ideas, the wildest range of notebooks, lets put india front Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquid, distinctio illum officia quod vitae unde laboriosam error aut dolorem quo animi atque beatae, non, libero ut sit explicabo consequatur?</p>
+            <button class="flat mute ">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+    <div class="space">
+            <h1>OUR CLIENTS</h1>
+    </div>
+        <div class="pat">
+           <a href="https://www.adidas.co.in/?msclkid=2dc3c8c9b9b21a389f01ad5fd70fa0aa"> <img class="lats" src="adid.jpg"  height="150px" width="150px" alt=""></a>
+            <a href="https://in.puma.com/in/en?msclkid=78922d4c215b1f30f8b248da4e78c763&utm_aud=OTH&utm_campaign=BS_BNG_SEA-TXT_Brand-Exact&utm_medium=BS&utm_obj=CONV&"> <img class="lats" src="puma.jpg"  height="150px" width="150px" alt=""></a>
+           <a href="https://www.nike.com/in/"> <img class="lats" src="nike.jpg"  height="150px" width="150px" alt=""></a>
+           <a href="https://www.skechers.com/"> <img class="lats" src="R.png" height="150px" width="350px" alt=""></a>
+        </div>
+    <div class="scout">
+        <div class="bike">
+        <h1>TESTIMONIALS</h1><br>
+              <p class="sum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eius? Similique enim atque eveniet aspernatur deserunt beatae</p>
+              <h2 class="sum">PROJECT MANAGER</h2>
+              <h3 class="sum min">VISHAL JAMWAL</h3>
+        </div>
+    </div>
+    <!--form-->
+    <div class="section">
+        <div class="contact">
+            <h1>Contact</h1>
+        </div>
+        <div class="form">
+        <form action="">
+          <div class="name">  
+            <div class="left">
+              <label>First Name</label>
+              <input type="text" class="inputs">
+            </div>
+             <div class="right">
+                <label>last name</label>
+                <input type="text" class="inputs">
+
+            </div>
+          </div>
+          <div class="name">  
+            <div class="left">
+                <label>email*</label>
+                <input type="text" class="inputs">
+
+            </div>
+             <div class="right">
+                <label>message</label>
+                <input type="text" class="inputs">
+
+            </div>
+          </div>
+          </form>   
+        </div>
+        <button class="flat btn"> submit</button>
+    </div>
+<div class="mat">
+    <div class="output">
+        <h2>VISHAL JAMWAL</h2>
+        <p>
+            500,terry park ,la <br>
+            mail:vishaljamwal@gmail.com <br>
+            tel:123456789
+        </p>
+
+    </div>
+    <div class="menu">
+        <ul class="block">
+            <li class="list">MENU</li>
+            <li class="men">about</li>
+            <li class="men">projects</li>
+            <li class="men">services</li>
+            <li class="men">plans & pricing</li>
+            <li class="men">tools & tips</li>
+            <li class="men">contact</li>
+        </ul>
+    </div>
+    <div class="icons">
+        <h2 class="break">SOCIALS</h2>
+        <ul>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+
+        </ul>
+           <p class="para">credits: 2035by JAMES CONSULTING. <br>
+            powered and secured by wix
+           </p>  
+
+    </div>
+</div>
+
+</body>
+</html>
